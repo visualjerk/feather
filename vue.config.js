@@ -3,10 +3,11 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin
 
 module.exports = {
+  devServer: {
+    disableHostCheck: true,
+    historyApiFallback: true
+  },
   configureWebpack: {
-    devServer: {
-      historyApiFallback: true
-    },
     resolve: {
       alias: {
         vue$: 'vue/dist/vue.common',
@@ -18,20 +19,20 @@ module.exports = {
         {
           resourceQuery: /blockType=docs/,
           loader:
-            process.env.BUILD === 'library'
-              ? require.resolve('./system/loader/docs-trim-loader.js')
-              : require.resolve('./system/loader/docs-loader.js')
+            process.env.DOCS
+              ? require.resolve('./system/loader/docs-loader.js')
+              : require.resolve('./system/loader/docs-trim-loader.js')
         }
       ]
     },
-    plugins: process.env.DOCS
-      ? []
-      : [
-          new BundleAnalyzerPlugin({
-            analyzerMode: 'static',
-            openAnalyzer: false
-          })
-        ]
+    plugins: process.env.NODE_ENV === 'production'
+      ? [
+        new BundleAnalyzerPlugin({
+          analyzerMode: 'static',
+          openAnalyzer: false
+        })
+      ]
+      : []
   },
   chainWebpack: config => {
     config.module

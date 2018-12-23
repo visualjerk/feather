@@ -1,4 +1,4 @@
-# Button
+# Button :)
 
 ```html
 <lo-button>Hello</lo-button>

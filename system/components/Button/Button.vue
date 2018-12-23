@@ -9,6 +9,12 @@ import Say from '@@/helper/index'
 
 export default {
   name: 'lo-button',
+  props: {
+    primary: {
+      type: Boolean,
+      default: false
+    }
+  },
   methods: {
     talk() {
       Say.sayHi()

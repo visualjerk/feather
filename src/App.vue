@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <lo-button>button</lo-button>
+    <lo-button primary>button</lo-button>
   </div>
 </template>
 

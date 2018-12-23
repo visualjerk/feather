@@ -1,14 +1,15 @@
 {
   "recommendations": [
     "christian-kohler.npm-intellisense",
-    "formulahendry.auto-close-tag",
-    "formulahendry.auto-rename-tag",
     "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "vincaslt.highlight-matching-tag",
-    "ionutvmi.path-autocomplete",
     "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "ionutvmi.path-autocomplete",
     "mrmlnc.vscode-scss",
+    "naumovs.color-highlight",
     "octref.vetur",
+    "vincaslt.highlight-matching-tag",
   ]
 }

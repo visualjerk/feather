@@ -20,8 +20,8 @@ module.exports = {
           resourceQuery: /blockType=docs/,
           loader:
             process.env.DOCS
-              ? require.resolve('./system/loader/docs-loader.js')
-              : require.resolve('./system/loader/docs-trim-loader.js')
+              ? require.resolve('./system/docs/loader/docs-loader.js')
+              : require.resolve('./system/docs/loader/docs-trim-loader.js')
         }
       ]
     },

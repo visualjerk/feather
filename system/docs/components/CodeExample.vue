@@ -1,8 +1,7 @@
 <template>
   <div :class="`${iframe ? 'vuep-iframe' : ''}`">
     <vuep
-      :template="template"
-      :options="{ theme: 'vueds' }"
+      :value="template"
       :iframe="iframe" />
   </div>
 </template>

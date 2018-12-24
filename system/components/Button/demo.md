@@ -1,7 +1,7 @@
 # Button :)
 
 ```html
-<lo-button>Hello</lo-button>
+<lo-button>Hello Dude</lo-button>
 ```
 
 ```html

@@ -9,7 +9,7 @@
     "docs:dev": "npm-run-all --parallel tokens:onchange tokens docs:serve",
     "docs:serve": "cross-env DOCS=true vue-cli-service serve --open system/docs/main.js",
     "tokens": "style-dictionary build -c './tokenconfig.json'",
-    "tokens:onchange": "onchange './system/tokens/src/**/*.js' -- npm run tokens",
+    "tokens:onchange": "onchange './system/tokens/*.js' -- npm run tokens",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },

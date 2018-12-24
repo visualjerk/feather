@@ -17,7 +17,7 @@
 <script>
 import ComponentDoc from './components/ComponentDoc'
 import { componentsMap } from './components'
-import tokens from '@@/tokens/tokens'
+import tokens from '@@/tokens/generated/tokens'
 import KebapCase from 'lodash/kebabCase'
 
 export default {

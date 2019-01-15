@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Styleguide</h1>
+    <button @click="$toggleTheme">toggle theme</button>
     <div v-for="group in tokens" :key="group.name">
       <div v-for="{name, value, comment} in group" :key="name">
         <h2>{{ name }}</h2>

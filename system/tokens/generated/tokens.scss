@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Mon, 24 Dec 2018 09:47:25 GMT
+ * Generated on Mon, 24 Dec 2018 09:59:44 GMT
  */
 
-$color-primary: #5fc6d2; /* only used for important elements */
-$color-neutral: #282828; /* used for most text elements */
-$text-color-primary: #5fc6d2; /* used for important parts of the text */
-$text-color-neutral: #282828;
-$background-color-primary: #5fc6d2; /* used for important backgrounds */
-$background-color-neutral: #282828;
+$color-primary: var(--color-primary); /* only used for important elements */
+$color-neutral: var(--color-neutral); /* used for most text elements */
+$text-color-primary: var(--text-color-primary); /* used for important parts of the text */
+$text-color-neutral: var(--text-color-neutral);
+$background-color-primary: var(--background-color-primary); /* used for important backgrounds */
+$background-color-neutral: var(--background-color-neutral);

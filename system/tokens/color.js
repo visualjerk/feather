@@ -1,3 +1,7 @@
+// ToDo: create custom format in style-dictionary
+// It sets the values of scss variables to css variable names
+// Example: $color-primary: var(--color-primary)
+
 module.exports = {
   color: {
     primary: {
